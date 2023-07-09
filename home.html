@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <title>Hotel Booking</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row header-t">
+        <div class="col-3">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+              alt="TripAdvisor"
+              width="220"
+              class="img--logo"
+            />
+          </a>
+        </div>
+       <!--  <div class="col"></div> -->
+        <div class="col-4">
+          <nav class="nav nav-item search--s">
+            <form class="d-flex" role="search" id="searchForm">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search your City"
+                aria-label="Search"
+                id="search-box"
+              />
+              <button
+                class="btn btn-outline-success"
+                id="submit"
+                type="submit"
+              >
+                Search
+              </button>
+            </form>
+          </nav>
+        </div>
+        <!-- <div class="col"></div> -->
+        <div class="col-5">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" id="logged"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"> 
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./signIn.html">SignIn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./signUp.html">SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr />
+
+    <div class="container toggle-content" id="container">
+      <h6><b>*Note:</b> For Logout hover the User</h6>
+      <div class="row row-padding">
+        <div class="col-4">
+            <span>Check In</span>
+            <div class="input-group date" id="datepicker">
+              <input type="text" class="form-control" id="date1" />
+              <span class="input-group-append">
+                <span class="input-group-text bg-light d-block">
+                  <i class="fa fa-calendar"></i>
+                </span>
+              </span>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+            <script>
+              // Data Picker Initialization
+              $(function () {
+                $("#datepicker").datepicker();
+              });
+            </script>
+            </div>  
+            <div class="col-4">
+                <span>Check Out</span>
+            <div class="input-group date" id="datepicker1">
+              <input type="text" class="form-control" id="date2" />
+              <span class="input-group-append">
+                <span class="input-group-text bg-light d-block">
+                  <i class="fa fa-calendar"></i>
+                </span>
+              </span>
+            </div>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+            <script>
+              // Data Picker Initialization
+              $(function () {
+                $("#datepicker1").datepicker();
+              });
+            </script>
+            <div class="col-4">
+            <span hidden>Check Out</span><br>
+            <button
+            class="btn btn-outline-success"
+            id="get-hotel"
+            type="submit">
+            Get Hotels
+          </button></div>
+          </div> 
+
+      <div class="row row-padding">
+        <div class="col">
+          <ul id="authors"></ul>
+        </div>
+      </div>
+      <div class="row row-padding">
+        <button id="submitClick" type="submit" value="submit">Book</button>
+      </div>
+    </div>
+    <script src="App.js"></script>
+    
+  </body>
+</html>

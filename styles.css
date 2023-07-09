@@ -1,1 +1,130 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/yeti/bootstrap.min.css';
 
+form label {
+  cursor: pointer;
+}
+
+
+.search-div{
+    width: 300px;
+    height: 50px;
+    /* margin: 30px; */
+    box-sizing: border-box;
+    border: 1px solid black;
+    position: absolute;
+}
+
+/* #search-box{
+    border-radius: 20px;
+    height: 45px;
+}
+ */
+/* #get-searched-data{
+    top: 90px;
+    left: 20px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    position: absolute;
+} */
+
+/* #submit{
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+} */
+.row-padding{
+    padding: 20px;
+}
+
+/* #authors{
+    padding-top: 30px;
+} */
+
+.search--s{
+    padding-top: 12px;
+}
+
+.img--logo{
+    padding-top: 7px;
+}
+
+.gradient-custom-3 {
+    /* fallback for old browsers */
+    background: #84fab0;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+    }
+    .gradient-custom-4 {
+    /* fallback for old browsers */
+    background: #84fab0;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+    }
+    button{
+        border-radius: 10px;
+    }
+
+    .toggle-content {
+        display: none;
+    }
+    
+    .toggle-content.is-visible {
+        display: block;
+    }
+
+    #get-hotel{
+        width: 100px;
+        height: max-content;
+        border-radius: 10px;
+        padding: 8px;
+    }
+    #submitClick{
+        display: none;
+        width: 100px;
+        height: auto;
+        border-radius: 10px;
+        padding: 5px;
+        color: green;
+    }
+
+    #submitClick::selection{
+        box-shadow: 2px;
+    }
+
+    #status{
+        border-radius: 10px;
+        height: 30px;
+    }
+    .is-hidden{
+        display: none;
+      }
+
+   /*  #logged:hover::before{
+        cursor: pointer;
+        content: Logout;
+    }
+
+    #logged:hover::after{
+        cursor: pointer;
+        content: Logout;
+    } */
+
+    h6{
+        text-align: right;
+    }
+
+    .header-t{
+        display: flex;
+        flex-direction: row;
+	    justify-content: space-between;
+        align-items: center;
+    }
